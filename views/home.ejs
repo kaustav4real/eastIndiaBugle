@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <!--Navbar Start-->
+    <section id="menu">
+        <nav class="nav-bar">
+            <div class="brand">
+                <h1>The East India Bugle</h1>
+            </div>
+            <div>
+                <div>
+                    <div class="nav_links">
+                        <ul>
+                            <li><a href="/news/article/international">International</a></li>
+                            <li><a href="/news/article/national">National</a></li>
+                            <li><a href="/news/article/sports">Sports</a></li>
+                            <li><a href="/news/article/economics">Economics</a></li>
+                            <li><a href="/news/article/entertainment">Entertainment</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div onclick="display-menu()" id="menu-target" class="mobile_nav_links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </section>
+
+
+    <!--Navbar End-->
+
+
+
+    <!--MOBILE MENU DISPLAYED-->
+    <!-- <section> -->
+        <div id="nav_links_target" class="mobile-menu">
+            <ul class="mobile-menu-unorderedlist">
+                <li><a href="/news/article/international">International</a></li><hr>
+                <li><a href="/news/article/national">National</a></li><hr>
+                <li><a href="/news/article/sports">Sports</a></li><hr>
+                <li><a href="/news/article/economics">Economics</a></li><hr>
+                <li><a href="/news/article/entertainment">Entertainment</a></li><hr>
+            </ul>
+        </div>
+    <!-- </section> -->
+
+
+
+
+    <!--MOBILE MENU DISPLAYED-->
+
+
+
+
+
+
+    <!--TOP NEWS-->
+
+
+
+    <!--TOP NEWS-->
+
+
+    <!--News Feed Start-->
+    <section id="news-feed">
+        <div class="container-fluid">
+            <div class="row">
+                <%posts.slice().reverse().forEach(p=>{%>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4  article-card">
+                        <div class="card-content">
+                            <img class="news-images" src="<%=p.coverImage%>" alt="">
+                            <h1>
+                                <%-p.title%>
+                            </h1>
+                            <div class="content-div" style="white-space: pre-line;">
+                                <%-p.content.substring(0,100)%>...
+                                    <button><a href="/articles/<%=p.id%>">Read More</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <%}) %>
+            </div>
+        </div>
+    </section>
+    <!--News Feed End-->
+
+
+
+</body>
+
+
+
+
+<script>
+
+    const display = menu = () => {
+        document.getElementById("nav_links_target").classList.toggle("display-menu");
+        document.getElementById("news-feed").classList.toggle("hide_sections");
+    }
+
+
+</script>
+
+</html>

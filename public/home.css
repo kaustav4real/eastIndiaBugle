@@ -1,0 +1,188 @@
+#menu {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    padding: 13px 49px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+.brand {
+    flex-grow: 1;
+}
+
+.brand h1 {
+    font-family: serif;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.nav_links ul {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 5px;
+}
+
+.nav_links li {
+    list-style: none;
+}
+
+.nav_links a {
+    font-size: 16px;
+    margin: 0 10px;
+    padding: 4px 5px;
+}
+
+.nav_links a:hover {
+    background-color: rgba(200, 200, 200, 0.431);
+    border: white;
+    border-radius: 18px;
+    color: black;
+}
+
+.mobile_nav_links {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+section {
+    padding: 20px;
+}
+
+#news-feed {
+    padding: 8% 10%;
+}
+
+
+
+.hide_sections{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1 {
+    font-size: 19px;
+}
+
+p {
+    display: inline;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+}
+
+.card-content {
+    background-color: white;
+    border-radius: 13px;
+    /* box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); */
+    margin-bottom: 2rem;
+    padding: 8px;
+    padding-bottom: 0;
+}
+
+.news-images{
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.card-content:hover {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+button {
+    background: white;
+    border: none;
+}
+
+.content-div {
+    bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    font-family: 15px;
+}
+
+.content-div p {
+    font-size: 14px;
+}
+
+a {
+    color: rgb(66 68 66);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width:888px) {
+    .nav_links {
+        display: none;
+    }
+
+    .mobile_nav_links {
+        bottom: 5px;
+        display: block;
+        position: relative;
+        left: 29px;
+
+    }
+
+    .mobile_nav_links span {
+        background-color: rgb(0, 0, 0);
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 27px;
+        top: 0px;
+        margin: 6px;
+    }
+
+    .display-menu {
+        display: block;
+    }
+
+    #menu {
+        background-color: white;
+        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+        padding: 15px 49px;
+        z-index: 1;
+    }
+}
+
+.display-menu {
+    display: block;
+    height: 100vh;
+    margin-top: 2rem;
+    transition: 1s;
+}
+
+.mobile-menu-unorderedlist {
+    padding: 0 2rem;
+}
+
+.mobile-menu-unorderedlist li {
+    list-style: none;
+}
