@@ -1,0 +1,22 @@
+h1{
+    font-size: 28px;
+}
+
+p{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* .container{
+    padding: 15% !important;
+} */
+
+.article-coverImages{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+img{
+    /* padding-top: 7%; */
+    width: 100%;
+}

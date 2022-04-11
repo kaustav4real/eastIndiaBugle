@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+form{
+    text-align: -webkit-center;
+}
+
+input,textarea{
+    display: block;
+    font-size: 24px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    width: 90vw;
+}
+
+.input-title{
+    padding: 10px;
+}
+
+.input-content{
+    padding: 16px;
+    font-family: sans-serif;
+}
+
+button{
+    background: white;
+    border: 0;
+    border-radius: 42px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    color: purple;
+    font-size: 21px;
+    padding: 15px;
+}
+
+button:hover{
+    color: green;
+}

@@ -1,0 +1,44 @@
+h1{
+    font-size: 19px;
+}
+
+p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+
+.card-content{
+    border-radius: 13px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    margin: 5px;
+    padding:8px;
+    padding-bottom: 0;
+}
+
+button{
+    display: none;
+    background: white;
+    border: none;
+    border-radius: 22px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    padding: 9px;
+    position: relative;
+    top: 7px;
+}
+
+.content-div{
+    bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    font-family: 15px;
+}
+
+.content-div p{
+    font-size: 14px;
+}
+
+a{
+    color: green;
+    font-size: 14px;
+    text-decoration: none;
+}

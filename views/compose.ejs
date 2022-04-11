@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="compose.css">
+</head>
+<body>
+    <form method="post" action="/compose">
+        <input class="input-title" placeholder="image holder" name="coverImage" required="true" autocomplete="off">
+        <input class="input-title" placeholder="title" name="title" required="true" autocomplete="off">
+        <textarea class="input-content" placeholder="Content" name="content" cols="30" rows="10" required="true"></textarea>
+        <input class="input-title" placeholder="tags" name="tag" required="true">
+        <p>Tags: 
+            International
+            National
+            Sports
+            Economics
+            Entertainment</p>
+        <button type="submit">Add Article</button>
+    </form>
+</body>
+</html>
